@@ -13,7 +13,7 @@ export async function fetchEntries() {
   }
 
 
-  console.log(`Error getting Entries for ${contentType.name}.`);
+  console.log(`Error getting Entries for ${entries}.`);
 }
 
 export default { fetchEntries };
