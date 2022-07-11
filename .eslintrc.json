@@ -15,6 +15,7 @@
                 "properties": "always"
             }
         ],
+        "eol-last": "error",
         "func-names": "off",
         "import/extensions": "off",
         "import/no-extraneous-dependencies": "off",
