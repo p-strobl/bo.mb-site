@@ -5,7 +5,7 @@ export default function Main() {
     <main>
       <Container>
         <Row>
-          <Col></Col>
+          <Col>{}</Col>
         </Row>
       </Container>
     </main>
