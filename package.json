@@ -7,6 +7,7 @@
     "contentful": "^9.1.32",
     "next": "^12.2.2",
     "react": "^18.2.0",
+    "react-awesome-styled-grid": "^3.1.4",
     "react-dom": "^18.2.0",
     "styled-components": "^5.3.5"
   },
@@ -28,6 +29,7 @@
     "prettier": "^2.7.1",
     "prettier-eslint": "^15.0.1",
     "prettier-stylelint": "^0.4.2",
+    "sass": "^1.53.0",
     "stylelint": "^14.9.1",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-styled-components": "^0.1.1",

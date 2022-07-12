@@ -1,7 +1,6 @@
-{
+module.exports = {
   "extends": [
-    "stylelint-config-styled-components",
-    "stylelint-config-prettier"
+    "stylelint-config-styled-components"
   ],
   "plugins": [
     "stylelint-order"

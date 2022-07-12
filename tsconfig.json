@@ -21,6 +21,15 @@
       "@components/*": [
         "src/components/*"
       ],
+      "@layout/*": [
+        "src/layout/*"
+      ],
+      "@style/*": [
+        "src/style/*"
+      ],
+      "@scss/*": [
+        "src/scss/*"
+      ],
       "@utils/*": [
         "src/utils/*"
       ]
