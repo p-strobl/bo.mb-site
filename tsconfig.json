@@ -18,19 +18,25 @@
     "noEmit": true,
     "outDir": "out",
     "paths": {
-      "@components/*": [
+      "~assets/*": [
+        "src/assets/*"
+      ],
+      "~components/*": [
         "src/components/*"
       ],
-      "@layout/*": [
+      "~lib/*": [
+        "src/lib/*"
+      ],
+      "~layout/*": [
         "src/layout/*"
       ],
-      "@style/*": [
+      "~style/*": [
         "src/style/*"
       ],
-      "@scss/*": [
+      "~scss/*": [
         "src/scss/*"
       ],
-      "@utils/*": [
+      "~utils/*": [
         "src/utils/*"
       ]
     },

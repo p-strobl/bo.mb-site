@@ -1,0 +1,10 @@
+@mixin input--disabled {
+  background: var(--white);
+  -webkit-background-clip: text;
+  background-image: var(--jokati-gradient);
+  border: 1px solid;
+  color: var(--blue-dark);
+  font-size: 12px;
+  padding: 12px 30px;
+  -webkit-text-fill-color: transparent;
+}

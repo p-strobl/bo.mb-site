@@ -1,0 +1,129 @@
+// Headlines
+@mixin headline-base {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  
+  &.u-bold {
+    font-weight: 700;
+  }
+  
+  &.u-light {
+    font-weight: 300;
+  }
+  
+  &.u-default {
+    color: var(--jokati-blue);
+  }
+  
+  &:not(.u-default):not(.u-no-style):not(a) {
+    @include text-gradient(var(--jokati-gradient));
+    display: inline-block;
+  }
+}
+
+@mixin headline--xxl {
+  @include headline-base;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+@mixin headline--xl {
+  @include headline-base;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+@mixin headline--l {
+  @include headline-base;
+  font-size: 26px;
+  line-height: 33px;
+}
+
+@mixin headline--m {
+  @include headline-base;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+@mixin headline--s {
+  @include headline-base;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+@mixin headline--xs {
+  @include headline-base;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+// Subtitle
+
+@mixin subtitle-uc {
+  color: var(--jokati-blue);
+  font-family: "Source Sans Pro";
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 20px;
+}
+
+// Paragraph
+@mixin copy-base {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: normal;
+
+  &.u-bold {
+    font-weight: 700;
+  }
+
+  &:not(.u-no-style):not(.button):not(a) {
+    color: var(--almost-black);
+  }
+}
+
+@mixin copy--big {
+  @include copy-base;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+@mixin copy--regular {
+  @include copy-base;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+@mixin copy--small {
+  @include copy-base;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+@mixin copy--tiny {
+  @include copy-base;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 16px;
+}
+
+//
+@mixin text-size-adjust($value) {
+  /* Prevent font scaling in landscape while allowing user zoom */
+  -moz-text-size-adjust: $value;
+  -ms-text-size-adjust: $value;
+  -webkit-text-size-adjust: $value;
+  text-size-adjust: $value;
+}
+
+//
+@mixin text-gradient($gradient) {
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-color: var(--black);
+  background-image: $gradient;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
