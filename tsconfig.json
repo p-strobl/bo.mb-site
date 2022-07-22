@@ -24,6 +24,9 @@
       "~components/*": [
         "src/components/*"
       ],
+      "~context/*": [
+        "src/context/*"
+      ],
       "~lib/*": [
         "src/lib/*"
       ],
@@ -38,6 +41,9 @@
       ],
       "~utils/*": [
         "src/utils/*"
+      ],
+      "~types/*": [
+        "src/types/*"
       ]
     },
     "resolveJsonModule": true,

@@ -4,8 +4,6 @@ const GlobalStyle = createGlobalStyle`
   body {
     background: teal;
     font-family: Open-Sans, Helvetica, Sans-Serif;
-    margin: 0;
-    padding: 0;
   }
 `;
 

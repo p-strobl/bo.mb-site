@@ -1,7 +1,9 @@
+import "~scss/_global.scss";
+
 import type { AppProps } from "next/app";
 import Head from "next/head";
 
-import "~scss/_global.scss";
+import HackyActionProvider from "~context/hacky-action-provider";
 
 import GlobalStyle from "~style/GlobalStyle";
 
@@ -16,7 +18,9 @@ export default function App({ Component, pageProps }: AppProps) {
 
       <GlobalStyle />
 
-      <Component {...pageProps} />
+      <HackyActionProvider>
+        <Component {...pageProps} />
+      </HackyActionProvider>
     </>
   );
 }
