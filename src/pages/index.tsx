@@ -7,24 +7,16 @@ import { HackyAction } from "~types/HackyAction";
 
 import { HackyActionContext, HackyActionContextType } from "~context/hacky-action-provider";
 
-import Header from "~layout/Header";
-import Main from "~layout/Main";
-import Footer from "~layout/Footer";
+import Home from "~layout/Home";
 
-export default function Home({ hackyAction }: HackyAction) {
+export default function Index({ hackyAction }: HackyAction) {
   const { updateHackyActionContext } = useContext(HackyActionContext) as HackyActionContextType;
 
   useEffect(() => {
     updateHackyActionContext(hackyAction);
   }, []);
 
-  return (
-    <>
-      <Header />
-      <Main />
-      <Footer />
-    </>
-  );
+  return <Home />;
 }
 
 export async function getStaticProps() {

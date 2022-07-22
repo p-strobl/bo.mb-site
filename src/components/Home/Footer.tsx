@@ -7,7 +7,7 @@ export default function Footer() {
       <Container>
         <Row>
           <Col>
-            <Image src="/netliheart.svg" alt="Netlify Logo" className="logo" layout="fill" />
+            {/* <Image src="/netliheart.svg" alt="Netlify Logo" className="logo" layout="fill" /> */}
           </Col>
         </Row>
       </Container>
