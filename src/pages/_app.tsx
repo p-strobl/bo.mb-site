@@ -9,6 +9,8 @@ import HackyActionProvider from "~context/hacky-action-provider";
 import GlobalStyle from "~style/GlobalStyle";
 import { customConfig } from "~style/AwesomeReactGridConfig";
 
+import { GridOverlay } from "~dev/Grid-Overlay";
+
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
@@ -21,6 +23,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
       <ThemeProvider theme={{ awesomegrid: customConfig }}>
         <HackyActionProvider>
+          {process.env.NODE_ENV === "production" ? null : <GridOverlay />}
           <Component {...pageProps} />
         </HackyActionProvider>
       </ThemeProvider>

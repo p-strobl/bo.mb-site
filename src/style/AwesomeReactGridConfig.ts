@@ -1,7 +1,7 @@
 export const customConfig = {
   columns: {
-    xs: 4,
-    sm: 8,
+    xs: 12,
+    sm: 12,
     md: 12,
     lg: 12,
     xl: 12,

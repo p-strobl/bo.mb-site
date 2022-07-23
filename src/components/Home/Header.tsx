@@ -9,14 +9,14 @@ export default function Header() {
     <header>
       <Container>
         <Row>
-          <Col debug xs={4} md={3}>
+          <Col debug xs={3}>
             <Logo />
           </Col>
-          <Col debug xs={4} md={9}>
-            <Visible xs sm>
+          <Col debug xs={9}>
+            <Visible xs>
               <SmallNavigation />
             </Visible>
-            <Visible md lg xl>
+            <Visible sm md lg xl>
               <BigNavigation />
             </Visible>
           </Col>
