@@ -20,11 +20,5 @@ export const Colors = createGlobalStyle`
 
     --yellow: #F1C84B;
     --light-yellow: #FCEAB6;
-
-    --jokati-blue: #287FB8;
-    --jokati-dark-blue: #2B3D4F;
-    --jokati-light-blue: #BED8F1;
-    --jokati-white-blue: #C0DAF2;
-    --jokati-gradient: linear-gradient(90deg, var(--jokati-blue), var(--jokati-dark-blue));
   }
 `;
