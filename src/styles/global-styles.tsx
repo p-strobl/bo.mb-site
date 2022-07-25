@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background: teal;
+  background: var(--teal);
   font-family: "palanquin";
 }
 

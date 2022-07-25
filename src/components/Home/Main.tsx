@@ -17,6 +17,7 @@ export default function Main() {
   };
   const newDate = new Date(date);
   const localDate = newDate.toLocaleDateString("de-DE", options);
+
   return (
     <main>
       <Container>

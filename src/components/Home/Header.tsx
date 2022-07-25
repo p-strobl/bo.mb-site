@@ -6,7 +6,7 @@ import BigNavigation from "./header/big-navigation";
 import SmallNavigation from "./header/small-navigation";
 
 const StyledStage = styled.div`
-  background-color: aqua;
+  background-color: var(--prime-blue);
   height: 50vh;
   inset: 0;
   position: absolute;
@@ -20,7 +20,7 @@ const ImageWrapper = styled.div`
 function Stage() {
   return (
     <StyledStage>
-      <ImageWrapper>Stage</ImageWrapper>
+      <ImageWrapper></ImageWrapper>
     </StyledStage>
   );
 }
@@ -37,14 +37,14 @@ export default function Header() {
       </Container>
       <NavContainer>
         <Row>
-          <Col xs={12} sm={3}>
+          <Col xs={12} md={2}>
             <Logo />
           </Col>
-          <Col xs={12} sm={9}>
-            <Visible xs>
+          <Col xs={12} md={10}>
+            <Visible xs sm>
               <SmallNavigation />
             </Visible>
-            <Visible sm md lg xl>
+            <Visible md lg xl>
               <BigNavigation />
             </Visible>
           </Col>
