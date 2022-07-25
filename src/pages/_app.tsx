@@ -1,15 +1,13 @@
-import "~scss/_global.scss";
-
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import { ThemeProvider } from "styled-components";
 
 import HackyActionProvider from "~context/hacky-action-provider";
 
-import GlobalStyle from "~style/GlobalStyle";
-import { customConfig } from "~style/AwesomeReactGridConfig";
+import GlobalStyles from "~styles/global-styles";
+import { customConfig } from "~styles/lib/awesome-react-grid-config";
 
-import { GridOverlay } from "~dev/Grid-Overlay";
+import { GridOverlay } from "~dev/grid-overlay";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -19,7 +17,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <GlobalStyle />
+      <GlobalStyles />
 
       <ThemeProvider theme={{ awesomegrid: customConfig }}>
         <HackyActionProvider>

@@ -1,1 +1,1 @@
-﻿export { GridOverlay } from "./GridOverlay";
+﻿export { GridOverlay } from "./grid-overlay";

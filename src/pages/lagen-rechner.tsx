@@ -8,11 +8,7 @@ import { HackyAction } from "~types/HackyAction";
 
 import { HackyActionContext, HackyActionContextType } from "~context/hacky-action-provider";
 
-import Header from "~components/home/header";
-import Main from "~components/home/Main";
-import Footer from "~components/home/Footer";
-
-export default function Index({ hackyAction }: HackyAction) {
+export default function Recipes({ hackyAction }: HackyAction) {
   const { updateHackyActionContext } = useContext(HackyActionContext) as HackyActionContextType;
 
   useEffect(() => {
@@ -22,12 +18,10 @@ export default function Index({ hackyAction }: HackyAction) {
   return (
     <>
       <Head>
-        <title>Home</title>
+        <title>Papier Lagen Rechner</title>
       </Head>
 
-      <Header />
-      <Main />
-      <Footer />
+      <div>Papier Lagen Rechner</div>
     </>
   );
 }
