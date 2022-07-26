@@ -1,9 +1,9 @@
 import { Col, Container, Row, Visible } from "react-awesome-styled-grid";
 import styled from "styled-components";
 
-import Logo from "~components/home/header/logo";
-import Stage from "~components/home/header/stage";
-import Navigation from "~components/home/header/navigation";
+import Logo from "~components/shared/header/logo";
+import Stage from "~components/shared/header/stage";
+import Navigation from "~components/shared/header/navigation";
 
 const NavContainer = styled(Container)`
   left: 0;
@@ -12,7 +12,7 @@ const NavContainer = styled(Container)`
   top: 0;
 `;
 
-export default function Header() {
+export function Header() {
   return (
     <header>
       <Container fluid>

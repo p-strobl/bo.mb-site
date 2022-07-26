@@ -2,6 +2,7 @@ import Link from "next/link";
 import styled from "styled-components";
 import Emoji from "a11y-react-emoji";
 import { FcCalculator } from "react-icons/fc";
+import ActiveLink from "~components/active-link";
 
 const NavBar = styled.nav`
   align-items: center;
@@ -39,44 +40,34 @@ export function Big() {
   return (
     <NavBar>
       <NavListElement>
-        <Link href="/">
-          <Anchor>
-            <Emoji symbol="🏠" label="home" />
-            <AnchorText>Home</AnchorText>
-          </Anchor>
-        </Link>
+        <ActiveLink href="/">
+          <Emoji symbol="🏠" label="home" />
+          <AnchorText>Home</AnchorText>
+        </ActiveLink>
       </NavListElement>
       <NavListElement>
-        <Link href="/lagen-rechner">
-          <Anchor>
-            <FcCalculator />
-            <AnchorText>Lagen Rechner</AnchorText>
-          </Anchor>
-        </Link>
+        <ActiveLink href="/lagen-rechner">
+          <FcCalculator />
+          <AnchorText>Lagen Rechner</AnchorText>
+        </ActiveLink>
       </NavListElement>
       <NavListElement>
-        <Link href="/rezepte">
-          <Anchor>
-            <Emoji symbol="🍜" label="rezepte" />
-            <AnchorText>Rezepte</AnchorText>
-          </Anchor>
-        </Link>
+        <ActiveLink href="/rezepte">
+          <Emoji symbol="🍜" label="rezepte" />
+          <AnchorText>Rezepte</AnchorText>
+        </ActiveLink>
       </NavListElement>
       <NavListElement>
-        <Link href="/hacky-sack">
-          <Anchor>
-            <Emoji symbol="🤸🏻‍♂️" label="hacky sack" />
-            <AnchorText>Hacky Sack</AnchorText>
-          </Anchor>
-        </Link>
+        <ActiveLink href="/hacky-sack">
+          <Emoji symbol="🤸🏻‍♂️" label="hacky sack" />
+          <AnchorText>Hacky Sack</AnchorText>
+        </ActiveLink>
       </NavListElement>
       <NavListElement>
-        <Link href="/about">
-          <Anchor>
-            <Emoji symbol="❔" label="about" />
-            <AnchorText>About</AnchorText>
-          </Anchor>
-        </Link>
+        <ActiveLink href="/about">
+          <Emoji symbol="❔" label="about" />
+          <AnchorText>About</AnchorText>
+        </ActiveLink>
       </NavListElement>
     </NavBar>
   );
