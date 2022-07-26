@@ -6,7 +6,7 @@ import BigNavigation from "./header/big-navigation";
 import SmallNavigation from "./header/small-navigation";
 
 const StyledStage = styled.div`
-  background-color: var(--prime-blue);
+  background-color: var(--c-big-stone);
   height: 50vh;
   inset: 0;
   position: absolute;

@@ -19,14 +19,14 @@ const Anchor = styled.a`
   align-items: center;
   border: 1px solid transparent;
   border-radius: 4px;
-  color: var(--prime-gray);
+  color: var(--c-mercury);
   display: flex;
   font-size: 1.2rem;
   padding: 8px 16px;
   transition: border 0.25s;
 
   &:hover {
-    border: 1px solid var(--prime-white);
+    border: 1px solid var(--c-sun);
   }
 `;
 

@@ -2,28 +2,20 @@ import { createGlobalStyle } from "styled-components";
 
 export const Colors = createGlobalStyle`
   :root {
-    --prime-black: #000000;
-    --prime-blue: #14213d;
-    --prime-orange: #fca311;
-    --prime-gray: #e5e5e5;
-    --prime-white: #FFFFFF;
+    --c-big-stone: #14213d;
+    --c-big-stone-100: #ecf0f9;
+    --c-big-stone-500: #7895d3;
 
-    --almost-black: #333333;
-    --dark-gray: #4F4F4F;
-    --gray: #90939D;
-    --gray-500: #718096;
-    --light-gray: #E5E5E5;
-    --very-light-gray: #F9F9F9;
+    --c-mercury: #e5e5e5;
 
-    --teal: teal;
+    --c-sun: #fca311;
+    --c-sun-100: #fff5e6;
+    --c-sun-500: #fece81;
 
-    --green: #10ac84;
-    --light-green: #BFF2E6;
+    --c-white: #ffffff;
 
-    --red: #e55039;
-    --light-red: #FACEC7;
-
-    --yellow: #F1C84B;
-    --light-yellow: #FCEAB6;
+    --c-woodsmoke: #161a1d;
+    --c-woodsmoke-100: #f0f2f4;
+    --c-woodsmoke-500: #8b9ba7;
   }
 `;
