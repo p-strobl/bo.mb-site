@@ -9,8 +9,8 @@ import { HackyAction } from "~types/HackyAction";
 import { HackyActionContext, HackyActionContextType } from "~context/hacky-action-provider";
 
 import Header from "~components/home/header";
-import Main from "~components/home/Main";
-import Footer from "~components/home/Footer";
+import Main from "~components/home/main";
+import Footer from "~components/home/footer";
 
 export default function Index({ hackyAction }: HackyAction) {
   const { updateHackyActionContext } = useContext(HackyActionContext) as HackyActionContextType;

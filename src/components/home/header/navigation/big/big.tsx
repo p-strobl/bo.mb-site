@@ -35,7 +35,7 @@ const AnchorText = styled.div`
   white-space: nowrap;
 `;
 
-export default function BigNavigation() {
+export function Big() {
   return (
     <NavBar>
       <NavListElement>

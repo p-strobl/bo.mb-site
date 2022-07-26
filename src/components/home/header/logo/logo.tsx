@@ -6,7 +6,7 @@ const LogoWrapper = styled.div`
   height: 100%;
 `;
 
-export default function Logo() {
+export function Logo() {
   return (
     <LogoWrapper>
       <div>Logo</div>
