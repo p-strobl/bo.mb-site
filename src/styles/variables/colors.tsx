@@ -2,7 +2,9 @@ import { createGlobalStyle } from "styled-components";
 
 export const Colors = createGlobalStyle`
   :root {
+    // Home---------------------------------------------------------------------
     --c-big-stone: #14213d;
+    --c-big-stone--rgb: 20, 33, 61;
     --c-big-stone-100: #ecf0f9;
     --c-big-stone-500: #7895d3;
 
@@ -17,5 +19,10 @@ export const Colors = createGlobalStyle`
     --c-woodsmoke: #161a1d;
     --c-woodsmoke-100: #f0f2f4;
     --c-woodsmoke-500: #8b9ba7;
+
+    --c-cinnabar: #e5383b;
+    --c-cinnabar-100: #fce8e9;
+    --c-cinnabar-500: #f08e90;
+    // -------------------------------------------------------------------------
   }
 `;

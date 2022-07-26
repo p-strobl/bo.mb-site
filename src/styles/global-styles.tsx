@@ -11,8 +11,9 @@ html {
 }
 
 body {
-  background: var(--teal);
   font-family: "palanquin";
+  margin: 0 auto;
+  max-width: 1980px;
 }
 
 img {

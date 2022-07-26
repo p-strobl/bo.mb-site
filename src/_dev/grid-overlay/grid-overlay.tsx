@@ -24,7 +24,7 @@ const StyledCol = styled(Col)`
 `;
 
 const Strip = styled.div`
-  background-color: var(--red);
+  background-color: var(--c-cinnabar);
   height: 100vh;
   opacity: 0.1;
   transition: opacity 0.25s;
