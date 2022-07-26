@@ -8,7 +8,7 @@ import { HackyAction } from "~types/HackyAction";
 
 import { HackyActionContext, HackyActionContextType } from "~context/hacky-action-provider";
 
-import Header from "~components/home/header";
+import Header from "~components/shared/header";
 import Main from "~components/home/main";
 import Footer from "~components/home/footer";
 
