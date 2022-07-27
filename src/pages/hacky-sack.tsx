@@ -8,7 +8,8 @@ import { HackyAction } from "~types/HackyAction";
 
 import { HackyActionContext, HackyActionContextType } from "~context/hacky-action-provider";
 
-import Header from "~components/shared/header";
+import Header from "~components/hacky-sack/header";
+import Main from "~components/hacky-sack/main";
 
 export default function Recipes({ hackyAction }: HackyAction) {
   const { updateHackyActionContext } = useContext(HackyActionContext) as HackyActionContextType;
@@ -24,6 +25,7 @@ export default function Recipes({ hackyAction }: HackyAction) {
       </Head>
 
       <Header />
+      <Main />
 
       <div>Hacky Sack</div>
     </>

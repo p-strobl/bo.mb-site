@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Image from "next/image";
 import styled from "styled-components";
 import Emoji from "a11y-react-emoji";
 import { FcCalculator } from "react-icons/fc";
@@ -13,25 +13,12 @@ const NavBar = styled.nav`
 `;
 
 const NavListElement = styled.li`
+  align-self: stretch;
+  display: flex;
   margin-left: 16px;
 `;
 
-const Anchor = styled.a`
-  align-items: center;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  color: var(--c-mercury);
-  display: flex;
-  font-size: 1.2rem;
-  padding: 8px 16px;
-  transition: border 0.25s;
-
-  &:hover {
-    border: 1px solid var(--c-sun);
-  }
-`;
-
-const AnchorText = styled.div`
+const LinkText = styled.div`
   margin-left: 8px;
   white-space: nowrap;
 `;
@@ -42,31 +29,31 @@ export function Big() {
       <NavListElement>
         <ActiveLink href="/">
           <Emoji symbol="🏠" label="home" />
-          <AnchorText>Home</AnchorText>
+          <LinkText>Home</LinkText>
         </ActiveLink>
       </NavListElement>
       <NavListElement>
         <ActiveLink href="/lagen-rechner">
           <FcCalculator />
-          <AnchorText>Lagen Rechner</AnchorText>
+          <LinkText>Lagen Rechner</LinkText>
         </ActiveLink>
       </NavListElement>
       <NavListElement>
         <ActiveLink href="/rezepte">
           <Emoji symbol="🍜" label="rezepte" />
-          <AnchorText>Rezepte</AnchorText>
+          <LinkText>Rezepte</LinkText>
         </ActiveLink>
       </NavListElement>
       <NavListElement>
         <ActiveLink href="/hacky-sack">
-          <Emoji symbol="🤸🏻‍♂️" label="hacky sack" />
-          <AnchorText>Hacky Sack</AnchorText>
+          <Image src="/images/hacky-sign.png" alt="Hacky-Sack Logo" width={17} height={30} />
+          <LinkText>Hacky Sack</LinkText>
         </ActiveLink>
       </NavListElement>
       <NavListElement>
         <ActiveLink href="/about">
           <Emoji symbol="❔" label="about" />
-          <AnchorText>About</AnchorText>
+          <LinkText>About</LinkText>
         </ActiveLink>
       </NavListElement>
     </NavBar>

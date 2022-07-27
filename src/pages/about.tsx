@@ -8,7 +8,7 @@ import { HackyAction } from "~types/HackyAction";
 
 import { HackyActionContext, HackyActionContextType } from "~context/hacky-action-provider";
 
-import Header from "~components/shared/header";
+import Header from "~components/about/header";
 
 export default function Recipes({ hackyAction }: HackyAction) {
   const { updateHackyActionContext } = useContext(HackyActionContext) as HackyActionContextType;

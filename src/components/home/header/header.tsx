@@ -1,9 +1,10 @@
 import { Col, Container, Row, Visible } from "react-awesome-styled-grid";
 import styled from "styled-components";
 
-import Logo from "~components/shared/header/logo";
-import Stage from "~components/shared/header/stage";
-import Navigation from "~components/shared/header/navigation";
+import Logo from "~components/shared/logo";
+import Navigation from "~components/shared/navigation";
+
+import Stage from "~components/home/header/stage";
 
 const NavContainer = styled(Container)`
   left: 0;

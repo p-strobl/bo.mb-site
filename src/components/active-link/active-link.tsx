@@ -36,7 +36,7 @@ const Anchor = styled.a<IAnchor>`
     left: 0;
     position: absolute;
     right: 0;
-    transform: translateX(${(props) => (props.isActive ? "0" : "-100%")});
+    transform: translateX(${(props) => (props.isActive ? "0" : "-101%")});
     transition: transform 0.25s;
   }
 `;

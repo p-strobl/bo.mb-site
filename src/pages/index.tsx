@@ -8,9 +8,10 @@ import { HackyAction } from "~types/HackyAction";
 
 import { HackyActionContext, HackyActionContextType } from "~context/hacky-action-provider";
 
-import Header from "~components/shared/header";
+import Header from "~components/home/header";
 import Main from "~components/home/main";
 import Footer from "~components/home/footer";
+import Spacer from "~components/spacer";
 
 export default function Index({ hackyAction }: HackyAction) {
   const { updateHackyActionContext } = useContext(HackyActionContext) as HackyActionContextType;
@@ -26,6 +27,7 @@ export default function Index({ hackyAction }: HackyAction) {
       </Head>
 
       <Header />
+      <Spacer size={80} />
       <Main />
       <Footer />
     </>
