@@ -1,8 +1,8 @@
 import Image from "next/image";
 import styled from "styled-components";
 import Emoji from "a11y-react-emoji";
-import { FcCalculator } from "react-icons/fc";
 import ActiveLink from "~components/active-link";
+import { FcCalculator } from "react-icons/fc";
 
 const NavBar = styled.nav`
   align-items: center;
